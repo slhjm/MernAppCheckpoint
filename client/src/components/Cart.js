@@ -61,7 +61,7 @@ class Cart extends Component {
                         <Card>
                             <CardBody>
                                 <CardTitle tag="h5">{item.name}</CardTitle>
-                                <CardSubtitle tag="h6">Rs. {item.price}</CardSubtitle>
+                                <CardSubtitle tag="h6">Tnd {item.price}</CardSubtitle>
                                 <div style={qtyBox}>
                                   <p style={{...qtyBtn, border:"1px solid red", color: "Red"}} onClick={() => this.onUpdateQuantity(user._id, item.productId, item.quantity - 1)}>
                                     -1
@@ -80,7 +80,7 @@ class Cart extends Component {
                         <div class="col-md-12">
                         <Card>
                             <CardBody>
-                                <CardTitle tag="h5">Total Cost = Rs. {this.props.cart.cart.bill}</CardTitle>
+                                <CardTitle tag="h5">Total Cost = Tnd {this.props.cart.cart.bill}</CardTitle>
                                 <Checkout
                                     user={user._id}
                                     amount={this.props.cart.cart.bill}
